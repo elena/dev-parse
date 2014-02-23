@@ -28,7 +28,8 @@ class AbstractPost(models.Model):
 class Post(AbstractPost):
 
     url = models.CharField(max_length=256)
-    views = models.PositiveIntegerField()
+    views = models.PositiveIntegerField(default=0)
+    posts = models.PositiveIntegerField(default=0)
 
     tickets = models.ManyToManyField(Ticket, null=True, blank=True)
 
