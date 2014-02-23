@@ -38,6 +38,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'taggit',
+
+    # local apps
+    'posts',
 )
 
 MIDDLEWARE_CLASSES = (
